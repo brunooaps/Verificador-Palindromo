@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verificar Palíndromo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="container">
+            <h1>Verificador de Palíndromo</h1>
+            
+            <form method="post">
+                <label for="word">Digite uma palavra:</label>
+                <input type="text" id="word" name="word" required>
+                <button type="submit" name="verify">Verificar</button>
+            </form>
+        
+            <?php if (isset($mensagem)): ?>
+              <p class="answer"><?php echo $mensagem; ?></p>
+            <?php endif; ?>
+        </div>
+        <h5>Teste desenvolvido por Bruno Possiedi</h5>
+    </div>
+
+</body>
+</html>
